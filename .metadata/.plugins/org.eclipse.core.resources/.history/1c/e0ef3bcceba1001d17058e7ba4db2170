@@ -1,0 +1,7 @@
+package com.example.J2SE.multiThreading;
+
+public class App {
+	public static void main(String[] args) {
+		MyThread threas1 = new MyThread(1);
+	}
+}

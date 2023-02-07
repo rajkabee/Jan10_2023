@@ -1,0 +1,14 @@
+package com.example.J2SE.streams;
+
+public class Person {
+	String name;
+	int age;
+	Gender gender;
+	public Person(String name, int age, Gender gender) {
+		super();
+		this.name = name;
+		this.age = age;
+		this.gender = gender;
+	}
+	
+}

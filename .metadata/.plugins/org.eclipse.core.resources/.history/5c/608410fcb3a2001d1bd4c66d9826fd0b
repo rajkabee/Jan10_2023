@@ -1,0 +1,21 @@
+package com.example.J2SE.streams;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class App {
+	public static void main(String[] args) {
+		List<Person> people = Arrays.asList(
+				new Person("Saugat", 27, Gender.Male),
+				new Person("Binod", 39, Gender.Male),
+				new Person("Reena", 42, Gender.Female),
+				new Person("Gopal", 54, Gender.Male),
+				new Person("Sarita", 64, Gender.Female),
+				new Person("Sarala", 14, Gender.Female),
+				new Person("Mohan", 4, Gender.Male),
+				new Person("Manisha", 34, Gender.Female),
+				new Person("Alina", 24, Gender.Female)
+				
+				);
+	}
+}

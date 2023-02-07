@@ -1,0 +1,7 @@
+INDEX VERSION 1.131+D:\Eclipse Workspace nav 2022\Java At 10, Jan 10 2023\.metadata\.plugins\org.eclipse.jdt.core
+2796799729.index
+718969269.index
+3383308485.index
+2141710328.index
+1865797976.index
+2014949329.index

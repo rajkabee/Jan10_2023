@@ -1,0 +1,7 @@
+package com.example.J2SE.streams;
+
+public class Person {
+	String name;
+	int age;
+	Gender gender;
+}

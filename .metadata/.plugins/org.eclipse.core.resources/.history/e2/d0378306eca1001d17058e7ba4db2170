@@ -1,0 +1,15 @@
+package com.example.J2SE.multiThreading;
+
+public class MyThread extends Thread {
+	int threadId;
+	public MyThread(int threadId) {
+		this.threadId=threadId;
+	}
+	
+	@Override
+	public void run() {
+		for(int i=1; i<5; i++) {
+			System.out.println("Thread "+threadId+" Running...");
+		}
+	}
+}

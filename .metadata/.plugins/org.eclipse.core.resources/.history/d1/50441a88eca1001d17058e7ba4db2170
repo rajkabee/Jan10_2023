@@ -1,0 +1,11 @@
+package com.example.J2SE.multiThreading;
+
+public class MyRunnable implements Runnable {
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

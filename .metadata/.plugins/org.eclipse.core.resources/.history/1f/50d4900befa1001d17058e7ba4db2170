@@ -1,0 +1,8 @@
+package com.example.J2SE.exceptionHandling;
+
+public class App {
+	public static void main(String[] args) {
+		DAO dao = new DAO();
+		dao.connect();
+	}
+}

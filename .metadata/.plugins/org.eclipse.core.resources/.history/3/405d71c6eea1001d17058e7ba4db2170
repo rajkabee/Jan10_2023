@@ -1,0 +1,13 @@
+package com.example.J2SE.exceptionHandling;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class DAO {
+	private void connect() {
+		Connection con = DriverManager.getConnection(
+				"jdbc:mysql://localhost:3306", 
+				"root","root"
+				);
+	}
+}

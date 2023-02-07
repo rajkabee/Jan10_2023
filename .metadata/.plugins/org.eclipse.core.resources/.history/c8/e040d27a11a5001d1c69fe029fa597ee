@@ -1,0 +1,5 @@
+package com.example.J2SE.jdbc;
+
+public class InsertUsingStatement {
+
+}

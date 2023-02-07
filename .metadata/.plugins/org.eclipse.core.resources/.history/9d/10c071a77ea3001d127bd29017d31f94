@@ -1,0 +1,17 @@
+package com.example.J2SE.lambdaExpression;
+
+public class App {
+	public static void main(String[] args) {
+		Hello hello = new Hi();
+	}
+}
+
+interface Hello{
+	public void greet();
+}
+
+class Hi implements Hello{
+	public void greet() {
+		System.out.println("greetings");
+	}
+}
