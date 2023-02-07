@@ -1,0 +1,5 @@
+package com.example.J2SE.jdbc.dao;
+
+public abstract class AbstractDao<T> implements Dao<T> {
+
+}

@@ -1,0 +1,24 @@
+package com.example.J2SE.jdbc.dao;
+
+import java.util.Scanner;
+
+public class App {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Student st = new Student();
+		int choice;
+		System.out.println("------MENU------");
+		System.out.println("1. Insert a new Student");
+		System.out.println("2. Find a Student");
+		System.out.println("3. View all Students");
+		System.out.println("4. Update a Student");
+		System.out.println("5. Delete a Stduent");
+		System.out.println("Choice: ");
+		choice  = sc.nextInt();
+		switch(choice) {
+		case 1:
+			
+		}
+		
+	}
+}

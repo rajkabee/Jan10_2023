@@ -1,0 +1,64 @@
+package com.example.J2SE.jdbc.dao;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.List;
+
+import com.example.J2SE.jdbc.Student;
+
+public class StudentDao extends AbstractDao<Student> {
+	
+	PreparedStatement pstm;
+	String query;
+	@Override
+	public int save(Student st) throws ClassNotFoundException, SQLException {
+		connect();
+		query = "insert into students (name, email, active) "
+				+ "values (?, ?, ?)";
+		pstm = con.prepareStatement(query);
+		pstm.setString(1, st.getName());
+		pstm.setString(2, st.getEmail());
+		pstm.setBoolean(3, st.isActive());
+		disconnect();
+		return pstm.executeUpdate();
+		
+	}
+
+	@Override
+	public Student getOne(int id) throws ClassNotFoundException, SQLException {
+		connect();
+		String query = "select * from students where id=?";
+		PreparedStatement pstm = con.prepareStatement(query); 
+		pstm.setInt(1, id);
+		ResultSet rs = pstm.executeQuery();
+		Student st = new Student();
+		if(rs.next()) {
+			st.setId(rs.getInt("id"));
+			st.setName(rs.getString("name"));
+			st.setEmail(rs.getString("email"));
+			st.setActive(rs.getBoolean("active"));
+		}
+		return st;
+		
+	}
+
+	@Override
+	public List<Student> getAll() throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int update(Student t) throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int delete(int id) throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}
