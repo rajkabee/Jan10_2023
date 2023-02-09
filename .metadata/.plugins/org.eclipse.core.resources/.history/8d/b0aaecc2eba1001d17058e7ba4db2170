@@ -1,7 +1,0 @@
-package com.example.J2SE.multiThreading;
-
-public class App {
-	public static void main(String[] args) {
-		
-	}
-}
