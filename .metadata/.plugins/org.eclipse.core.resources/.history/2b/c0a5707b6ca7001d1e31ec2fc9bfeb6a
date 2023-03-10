@@ -1,8 +1,0 @@
-package com.example.J2SE.jdbc.hibernate;
-
-public class Product {
-	private int id;
-	private String name;
-	private String manufacturer;
-	private float price;
-}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+    <context:annotation-config/>
+    
+    
+    <!-- 
+    <context:property-placeholder location="classpath:application.properties"/>    
+    
+    
+    <bean id="date" class="com.example.springFramework.Date">
+    			<property name="day" value="12"/>
+    			<property name="month" value="3"/>
+    			<property name="year" value="2020"/>
+    		</bean>
+   	<bean id="mfd" class="com.example.springFramework.Date">
+    			<property name="day" value="2"/>
+    			<property name="month" value="3"/>
+    			<property name="year" value="2023"/>
+    		</bean>
+    <bean id="jeans" class="com.example.springFramework.Product">
+    	<property name="id" value="123"/>
+    	<property name="name" value="Jeans"/>
+    	<property name="manufacturer" value="Levis'"/>
+    	<property name="mfd">
+    		<bean class="com.example.springFramework.Date">
+    			<property name="day" value="31"/>
+    			<property name="month" value="12"/>
+    			<property name="year" value="2022"/>
+    		</bean>
+    	</property>
+    </bean>
+   
+    <bean id="tshirt" class="com.example.springFramework.Product" autowire="constructor">
+    	<constructor-arg name="id" value="456"/>
+    	<constructor-arg name="name" value="Tshirt"/>
+    	<constructor-arg name="manufacturer" value="Gucci"/>
+    	<constructor-arg name="mfd" ref="date"/> 
+    </bean>
+    <bean id="boots" class="com.example.springFramework.Product" autowire="constructor">
+    	<constructor-arg name="id" value="${boot.id}"/>
+    	<constructor-arg name="name" value="${boot.name}"/>
+    	<constructor-arg name="manufacturer" value="${boot.manufacturer}"/>
+    </bean>
+    -->
+    
+</beans>

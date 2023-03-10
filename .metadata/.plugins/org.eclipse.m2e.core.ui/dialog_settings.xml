@@ -25,15 +25,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.example.SwingGUI"/>
-			<item value="com.example.J2SE"/>
+			<item value="com.example.springFramework"/>
 		</list>
 		<list key="groupId">
 			<item value="com.example"/>
 		</list>
 		<list key="artifactId">
-			<item value="SwingGUI"/>
-			<item value="J2SE"/>
+			<item value="springFramework"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
