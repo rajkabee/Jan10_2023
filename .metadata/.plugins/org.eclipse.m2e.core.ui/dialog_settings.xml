@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\Eclipse Workspace nav 2022\Java At 10, Jan 10 2023\thymeleafExample"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -25,12 +26,14 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.example.assignment"/>
 			<item value="com.example.springFramework"/>
 		</list>
 		<list key="groupId">
 			<item value="com.example"/>
 		</list>
 		<list key="artifactId">
+			<item value="assignment"/>
 			<item value="springFramework"/>
 		</list>
 		<list key="projectNameTemplate">

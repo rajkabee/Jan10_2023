@@ -1,0 +1,32 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+  <head>
+    <title>Good Thymes Virtual Grocery</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" media="all" 
+          href="../../css/gtvg.css" th:href="@{/css/gtvg.css}" />
+  </head>
+
+  <body>
+  
+    <p th:text="#{home.welcome}">Welcome to our grocery store!</p>
+  
+
+Established locale country: <span th:text="${#locale.country}">US</span>
+<p>
+  Today is: <span th:text="${#calendars.format(today,'dd MMMM yyyy')}">13 May 2011</span>
+</p>
+	<h1 >Title</h1>
+	<p th:text="${msg}"></p>
+	
+	<p th:if="${1<2}">the if message</p>
+	
+	<ul>
+		<li th:each="name:${names}" th:text=${name}></li>
+	</ul>
+	
+</body>
+</html>
