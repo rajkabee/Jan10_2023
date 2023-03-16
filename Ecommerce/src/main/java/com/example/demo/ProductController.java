@@ -19,7 +19,7 @@ public class ProductController {
 	@Autowired
 	ProductRepository productRepository;
 	
-	@GetMapping("/")
+	@GetMapping("")
 	public String products(Model model) {
 		List<Product> products = productRepository.findAll();
 		model.addAttribute("products",products);

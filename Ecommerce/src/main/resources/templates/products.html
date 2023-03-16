@@ -4,7 +4,7 @@
 <body>
 	<h1 th:replace="~{layouts::header}"></h1>
 	<h1>Products</h1>
-	<a th:href="@{addProduct}"><button>Add Product</button></a>
+	<a th:href="@{products/addProduct}"><button>Add Product</button></a>
 	<table>
 		<thead>
 			<tr>
@@ -12,6 +12,7 @@
 				<th>Name</th>
 				<th>Manufacturer</th>
 				<th>Description</th>
+				<th>Action</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -20,7 +21,10 @@
 				<td th:text="${product.name}"></td>
 				<td th:text="${product.manufacturer}"></td>
 				<td th:text="${product.description}"></td>
-			
+				<td>
+					<a th:href="products+'/'+updateProduct+'/'+${product.id}"><button>Update</button></a>
+					<a th:href="products+'/'+deleteProduct+'/'+${product.id}"><button>Delete</button></a>
+				</td>
 			</tr>
 		</tbody>
 	</table>
