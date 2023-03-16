@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="NewWizardAction">
-		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.wst.xml.ui.internal.wizards.NewXMLWizard"/>
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.wst.html.ui.internal.wizard.NewHTMLWizard"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
-			<item value="org.eclipse.emf.codegen.ecore.ui.wizardCategory"/>
-			<item value="hibernatewizards"/>
-			<item value="org.eclipse.jst.ws.ui.new"/>
-			<item value="org.eclipse.wst.XMLCategory"/>
-			<item value="org.eclipse.ui.Examples"/>
-			<item value="org.eclipse.ui.Examples/org.eclipse.wst.xml.examples"/>
+			<item value="org.eclipse.fx.ide"/>
+			<item value="org.eclipse.wst.web.ui"/>
+			<item value="org.eclipse.xtext.projectwiz"/>
 		</list>
 	</section>
 	<section name="EditorSelectionDialog">
-		<item key="EditorSelectionDialog.STORE_ID_FILE_EXTENSION" value=".properties"/>
-		<item key="EditorSelectionDialog.STORE_ID_INTERNAL_EXTERNAL" value="false"/>
-		<item key="EditorSelectionDialog.STORE_ID_DESCR" value="SpringBootPropertyEditor"/>
+		<item key="EditorSelectionDialog.STORE_ID_FILE_EXTENSION" value=".html"/>
+		<item key="EditorSelectionDialog.STORE_ID_INTERNAL_EXTERNAL" value="true"/>
+		<item key="EditorSelectionDialog.STORE_ID_DESCR" value="Visual Studio Code Source File"/>
 	</section>
 </section>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{layouts::headElement}"></head>
+
+<body>
+<h1 th:replace="~{layouts::header}"></h1>
+	<h1>Product Form</h1>
+	<form action="addProduct" method="POST">
+		<input type="text" name="name" placeholder="Product Name"><br>
+		<input type="text" name="manufacturer" placeholder="Product Manufacturer"><br>
+		<input type="text" name="description" placeholder="Product Description"><br>
+		<input type="submit" value="submit">
+	</form>
+</body>
+</html>
