@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{layouts::headElement}"></head>
+
+<body>
+<h1 th:replace="~{layouts::header}"></h1>
+	<h1>Update Product Form</h1>
+	<form action="/products/updateProduct" method="POST">
+		<input type="hidden" name="id" th:value="${product.id}">
+		<input type="text" name="name" placeholder="Product Name" th:value="${product.name}"><br>
+		<input type="text" name="manufacturer" placeholder="Product Manufacturer" th:value="${product.manufacturer}"><br>
+		<input type="text" name="description" placeholder="Product Description" th:value="${product.description}"><br>
+		<input type="submit" value="submit">
+	</form>
+</body>
+</html>

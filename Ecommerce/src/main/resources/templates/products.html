@@ -4,9 +4,9 @@
 <body>
 	<h1 th:replace="~{layouts::header}"></h1>
 	<h1>Products</h1>
-	<a th:href="@{products/addProduct}"><button>Add Product</button></a>
-	<table>
-		<thead>
+	<a th:href="@{products/addProduct}"><button class="btn btn-primary">Add Product</button></a>
+	<table class="table table-light">
+		<thead class="thead-light">
 			<tr>
 				<th>Sn.</th>
 				<th>Name</th>
@@ -22,11 +22,19 @@
 				<td th:text="${product.manufacturer}"></td>
 				<td th:text="${product.description}"></td>
 				<td>
-					<a th:href="products+'/'+updateProduct+'/'+${product.id}"><button>Update</button></a>
-					<a th:href="products+'/'+deleteProduct+'/'+${product.id}"><button>Delete</button></a>
+					<a th:href="products+'/'+updateProduct+'/'+${product.id}"><button class="btn btn-primary">Update</button></a>
+					<button class="btn btn-primary" th:attr="onclick=|deleteProduct('${product.id}')|" >Delete</button>
 				</td>
 			</tr>
 		</tbody>
 	</table>
+	<script type="text/javascript">
+		function deleteProduct(id){
+			let confirmed = window.confirm("Confirm Delete?");
+			if(confirmed){
+				window.location.replace("/products/deleteProduct/"+id);
+			}
+		}
+	</script>
 </body>
 </html>
